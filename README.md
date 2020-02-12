@@ -12,9 +12,12 @@ Code Lab provides foundational skills training for folks interested in computati
 
 The lab section will be about 90 minutes and will meet 6 to 9 times over the course of the semester. Each meeting will consist of introducing a concept, providing you a short prompt/exercise designed to help you learn the concept, and then open work time, where we’ll walk around and support you as you solve the problem.
 
+👉*Please [sign up]*(https://docs.google.com/spreadsheets/d/1UJF4e9RK39tvByTza2kSOql0mAdfO2C_T2cvvQUYP0s/edit?usp=sharing) by the Sunday prior to the session if you plan to attend each session, so that we can plan for the appropriate number of students.
+
 # Schedule
 
 ## Code Lab Session 1: Let's get organized.
+
 Topics:
 - Getting Started
 - Text editors
