@@ -1,11 +1,9 @@
 # Code Lab Spring 2020
-Get coded.
 
-Wednesdays 5:00pm—6:30pm
-Room 404
+Wednesdays 5:00pm–6:30pm | Room 404
 
-Nic Schumann (nschuman@risd.edu)
-Minkyoung Kim (mkim37@risd.edu)
+Nic Schumann (nschuman@risd.edu),
+Minkyoung Kim (mkim37@risd.edu),
 Marie Otsuka (motsuka@risd.edu)
 
 Code Lab provides foundational skills training for folks interested in computation basics. It will be especially targeted towards students enrolled in Generative Design: Tool, System, Network [GRAPH-2310-01 (31423)], Web Type [GRAPH-2313-01], or  Machine Learning and Design [GRAPH-2314]. This won’t be for credit, it won’t assign projects, and it won’t require any commitment other than showing up. It’s about providing support for students enrolled in rigorous computational courses who want it.
