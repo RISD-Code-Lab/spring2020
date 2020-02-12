@@ -14,7 +14,7 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 
 # Schedule
 
-## Code Lab Session 1: How to get and stay organized.
+## Code Lab Session 1: Let's get organized.
 Topics:
 - Getting Started
 - Text editors
