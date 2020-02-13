@@ -1,0 +1,27 @@
+{
+  "name": "code-lab-session-01",
+  "version": "1.0.0",
+  "description": "Let's get organized.",
+  "main": "index.html",
+  "scripts": {
+      "livereload": "livereload .",
+      "serve": "http-server . -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RISD-code-lab/cl-spring2020.git"
+  },
+  "keywords": [
+    "RISD-code-lab"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RISD-code-lab/cl-spring2020/issues"
+  },
+  "homepage": "https://github.com/RISD-code-lab/cl-spring2020#readme",
+  "dependencies": {
+    "http-server": "^0.12.1",
+    "livereload": "^0.9.1"
+  }
+}
