@@ -1,6 +1,6 @@
 # Code Lab Spring 2020
 
-Wednesdays 5:00pm–6:30pm | Room 404
+Wednesdays 5:00pm–6:30pm | Design Center Room 501
 
 Nic Schumann (nschuman@risd.edu),
 Minkyoung Kim (mkim37@risd.edu),
