@@ -1,0 +1,46 @@
+/* Separated Styles */
+body {
+    box-sizing: border-box;
+}
+
+article {
+    height: 100vh;
+    width: 100vw;
+}
+
+.block {
+
+    width: 46.25vw;
+    height: 46.25vh;
+    background-color: red;
+
+    position: absolute;
+
+    mix-blend-mode: difference;
+
+}
+
+#top-left {
+    top: 2.5vh;
+    left: 2.5vw;
+}
+
+#top-right {
+    top: 2.5vh;
+    left: calc(2 * 2.5vw + 45vw);
+
+    background-color: blue;
+}
+
+#bottom-left {
+    top: calc(2 * 2.5vh + 45vh);
+    left: 2.5vw;
+    transform: rotate(45deg);
+
+    background-color: blue;
+}
+
+#bottom-right {
+    top: calc(2 * 2.5vh + 45vh);
+    left: calc(2 * 2.5vw + 45vw);
+}
