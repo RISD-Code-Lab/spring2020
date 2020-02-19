@@ -121,13 +121,15 @@ It loads a script provided by our `livereload` process which monitors your compu
 
 ### 4. Coda: Livereload and Atom
 
-If you use the Atom text editor like I do, there's a plugin that wraps all of this functionality in a convenient bubble for you.
+If you use the Atom text editor like I do, there's a plugin that wraps all of this functionality in a convenient bubble for you. It's called [Atom Livereload](https://atom.io/packages/livereload).
 
 In atom, you can type `⌘-SHIFT-P` to bring up a command palette. Then type "Install Packages and Themes" to bring up the package manager. From there, you can type "livereload" and hit install to download the plugin.
 
 Once you have it installed, `CTRL-SHIFT-R` toggles the server. After that, behavior is the same as the command line version. The plugin is really just a very think wrapper around the command line tool.
 
 This plugin lets you avoid using the command line. However, I'd recommend getting used to the command line environment. It's an integral part of a web development workflow (even in 2020). Trying to get `node` and `livereload` going is a good way to start.
+
+For sublime text users, there's a [Livereload Plugin](https://packagecontrol.io/packages/LiveReload) that works similarly.
 
 
 ### 3. Gallery of Clean Workspaces
