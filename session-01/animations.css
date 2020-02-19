@@ -1,0 +1,29 @@
+@keyframes rotate {
+    0% { transform: rotate3d(1, 2, 3, 0deg);}
+    50% { transform: rotate3d(1, 2, 3, 180deg);}
+    100% { transform: rotate3d(1, 2, 3, 360deg); }
+}
+
+.block {
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-style: preserve-3d;
+}
+
+#top-left {
+    animation-delay: 0s;
+}
+
+#top-right {
+    animation-delay: 3s;
+}
+
+#bottom-left {
+    transform: rotate(0deg);
+    animation-delay: 6s;
+}
+
+#bottom-right {
+    animation-delay: 9s;
+}

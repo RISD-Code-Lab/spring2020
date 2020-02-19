@@ -9,14 +9,14 @@ article {
 }
 
 .block {
-
+    position: relative;
     width: 46.25vw;
     height: 46.25vh;
-    background-color: red;
+    background-color: orange;
 
     position: absolute;
 
-    mix-blend-mode: difference;
+    mix-blend-mode: multiply;
 
 }
 
@@ -28,19 +28,28 @@ article {
 #top-right {
     top: 2.5vh;
     left: calc(2 * 2.5vw + 45vw);
-
-    background-color: blue;
 }
 
 #bottom-left {
     top: calc(2 * 2.5vh + 45vh);
     left: 2.5vw;
     transform: rotate(45deg);
-
-    background-color: blue;
 }
 
 #bottom-right {
     top: calc(2 * 2.5vh + 45vh);
     left: calc(2 * 2.5vw + 45vw);
+}
+
+
+
+
+.type {
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size: 40em;
+    transform: translate(-50%,-50%);
+    color:red;
+    mix-blend-mode: multiply;
 }
