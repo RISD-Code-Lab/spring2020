@@ -1,6 +1,6 @@
 # Code Lab Spring 2020
 
-Wednesdays 5:00pm–6:30pm | Design Center Room 501
+Wednesdays 5:00pm–6:30pm | Design Center Room 212
 
 Nic Schumann (nschuman@risd.edu),
 Minkyoung Kim (mkim37@risd.edu),
@@ -14,9 +14,15 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 
 # Schedule
 
-## Code Lab Session 1: Let's get organized.
+## Code Lab Session 2: Let’s talk terminal
 
-Topics:
+- Introduction to the terminal
+- Navigating the filesystem
+- Running programs
+- Installing packages
+
+## Code Lab Session 1: Let's get organized
+
 - Getting Started
 - Text editors
 - HTML, CSS, & JS: How it all comes together
