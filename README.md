@@ -21,7 +21,7 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 - Running programs
 - Installing packages
 
-## Code Lab Session 1: Let's get organized
+## Code Lab Session 1: Let’s get organized
 
 - Getting Started
 - Text editors
