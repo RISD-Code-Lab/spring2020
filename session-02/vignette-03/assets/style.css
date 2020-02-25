@@ -1,0 +1,54 @@
+/* Style */
+
+body {
+    box-sizing: border-box;
+}
+
+.done {
+    background-color: yellow;
+}
+
+/* Styling for the player character. */
+.player {
+    position: fixed;
+    background-color: salmon;
+
+    z-index: 10;
+
+    transition: top left;
+
+    border-radius: 100% 100%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Styling for the goal element. */
+.goal {
+    position: fixed;
+
+    background-color: black;
+
+    border-radius: 100% 100%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* Styling for the history indicator that the player poops out. */
+.indicator {
+    width: 5px;
+    height: 5px;
+    position: fixed;
+    background-color: salmon;
+    opacity: .25;
+
+    z-index: 1;
+
+    transition: top left;
+
+    border-radius: 100% 100%;
+
+    transform: translate(-50%, -50%);
+}
