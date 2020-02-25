@@ -2,6 +2,7 @@ var express = require('express')
 var app = express();
 var server = require('http').Server(app)
 var io = require('socket.io')(server);
+var ip = require('ip')
 
 var sockets = []
 
@@ -42,13 +43,9 @@ app.post('/', (req, res) => {
 
 
 
-
-// io.on('connection', (socket) => {
-//
-//     const id = sockets.push( socket ) - 1;
-//     socket.on('disconnect', () => { sockets = sockets.splice(id, 1);});
-//
-// });
+// Send the IP address of the server to the client, so we can display where
+// People should connect.
+io.on('connection', (socket) => { socket.emit('ip', {ip: ip.address()}); });
 
 
 server.listen(8080)
