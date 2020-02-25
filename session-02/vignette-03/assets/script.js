@@ -14,15 +14,17 @@ var socket = io.connect('http://localhost:8080');
  * units, 0 dx and dy velocity, and a constant width and height in viewport units.
  * // NOTE: units, all units are viewport units.
  */
-var player = {type: "player", x: 50, y: 90, dx: 0, dy: 0, w: 1.5, h: 1.5};
+var player = {id:"player", type: "player", display: "centered", x: 50, y: 90, dx: 0, dy: 0, w: 1.5, h: 1.5};
 
 
-var game = [{type: "goal", x: 50, y: 10, w: 1.5, h: 1.5}];
+var game = [
+    {id: "goal", type: "goal", display: "centered", x: 50, y: 10, w: 1.5, h: 1.5},
+    {id: "block-A", type: "wall", x: 10, y: 45, w: 80, h: 5}
+];
 
 const framerate = 30;
 const increment = 0.005;
 const indicators = true;
-var ip = undefined;
 
 socket.on('ip', function( data ) {
     $(document).ready(function() {
@@ -36,11 +38,12 @@ function viewportMin(object) {
 
 function create(object) {
     var element = $('<div>')
+        .attr( 'id', object.id)
         .addClass(object.type)
         .css('top', object.y + 'vh')
         .css('left', object.x + 'vw')
-        .css('width', viewportMin(object))
-        .css('height', viewportMin(object))
+        .css('width', (object.display === "centered") ? viewportMin(object) : object.w + 'vw' )
+        .css('height', (object.display === "centered") ? viewportMin(object) : object.h + 'vh' )
         .css('transition-duration', (1000 / framerate) + 'ms');
 
     $('body').append(element).addClass('running')
@@ -90,10 +93,17 @@ function intersects(player, object) {
     var player_min_y = player.y - player.h / 2
     var player_max_y = player.y + player.h / 2
 
-    var object_min_x = object.x - object.w / 2
-    var object_max_x = object.x + object.w / 2
-    var object_min_y = object.y - object.h / 2
-    var object_max_y = object.y + object.h / 2
+    if ( object.display === "centered" ) {
+        var object_min_x = object.x - object.w / 2
+        var object_max_x = object.x + object.w / 2
+        var object_min_y = object.y - object.h / 2
+        var object_max_y = object.y + object.h / 2
+    } else {
+        var object_min_x = object.x
+        var object_max_x = object.x + object.w
+        var object_min_y = object.y
+        var object_max_y = object.y + object.h
+    }
 
     var in_bounds_x =  player_min_x <= object_max_x && player_min_x >= object_min_x
                     || player_max_x <= object_max_x && player_max_x >= object_min_x
@@ -160,8 +170,6 @@ function mapPropertyToIncrement(property, mapping) {
 
 
 $(document).ready(function() {
-
-    console.log(ip);
 
     setup();
 

@@ -9,7 +9,7 @@ body {
     background-color: hotpink;
 }
 
-.done #connection-info {
+.done * {
     display: none;
 }
 
@@ -40,6 +40,12 @@ body {
     border-radius: 100% 100%;
 
     transform: translate(-50%, -50%);
+}
+
+
+.wall {
+    position: fixed;
+    background-color: black;
 }
 
 
