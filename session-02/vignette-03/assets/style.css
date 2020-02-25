@@ -4,20 +4,27 @@ body {
     box-sizing: border-box;
 }
 
+/* Styling for the win screen */
 .done {
-    background-color: yellow;
+    background-color: hotpink;
 }
+
+.done #connection-info {
+    display: none;
+}
+
+
 
 /* Styling for the player character. */
 .player {
     position: fixed;
-    background-color: salmon;
+    background-color: hotpink;
 
     z-index: 10;
 
-    transition: top left;
+    transition: all;
 
-    border-radius: 100% 100%;
+    border-radius: 200px 200px;
 
     transform: translate(-50%, -50%);
 }
@@ -28,7 +35,7 @@ body {
 .goal {
     position: fixed;
 
-    background-color: black;
+    border: 2px solid hotpink;
 
     border-radius: 100% 100%;
 
@@ -41,7 +48,7 @@ body {
     width: 5px;
     height: 5px;
     position: fixed;
-    background-color: salmon;
+    background-color: hotpink;
     opacity: .25;
 
     z-index: 1;
@@ -51,4 +58,13 @@ body {
     border-radius: 100% 100%;
 
     transform: translate(-50%, -50%);
+}
+
+/** Styling for the lil box that tells you what IP address to message */
+#connection-info {
+    position: fixed;
+    top: 97.5vh;
+    left: 2.5vw;
+    font-size: 1em;
+    transform:translateY(-100%);
 }
