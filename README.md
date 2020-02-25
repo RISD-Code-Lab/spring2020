@@ -33,6 +33,9 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 
 We will be designing future sessions based off of student needs and interests over the course of the semester. 
 
+# Lectures
+Past lecture slides are accessible on [Google Drive](https://drive.google.com/open?id=1Hf3KJXnk7XSb8Xmy0DBtrlfkVhqaygkB)
+
 ## Possible Upcoming Session Topics:
 - Datatypes
 - Structures
