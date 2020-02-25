@@ -31,4 +31,6 @@ Our topic: **Three Triplets on the Terminal**! Today, we'll explore three sets o
 - **Vignette #3: Local Area Networking** Your browser is basically a really fancy rendering engine that sends and recieves HTTP traffic. If we strip all of the rendering away, we get something that's basically equivalent to `curl`, a option-laden utility that sends and received HTTP traffic.
     - `man` – a command that shows you the documentation for another terminal command. Yes, it has an unfortunate name; it's a shortening of `man`ual. *Warning:* Not all commands have manual pages.
     - `curl` – a general purpose tool for sending and receiving HTTP traffic (and lots of other kinds of network traffic). The full scope of curl is way beyond us, but everything you would ever want to know about it is [here](https://ec.haxx.se/).
+        - Sending a post request with `curl -X POST`
+        - Sending a post request with a header using `curl -X POST -H "{Key}: {Value}"`
 - **Extra Credit: Not for Completion in Lab.** Download and install node.
