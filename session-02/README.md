@@ -15,6 +15,7 @@ Our topic: **Three Triplets on the Terminal**! Today, we'll explore three sets o
     - *With a special bonus appearance from:*
         - `open` – a macOS utility program that lets you open files, addresses, and locations in their default programs.
         -  `clear` – free up your visual real estate.
+    - For those who want another look at the terminal, [this video](https://www.youtube.com/watch?v=V4ShSik25Wo) has more information.
 - **Vignette #2: The Lifecycle of a Software Process**. There are two kinds of processes, programs that run for a finite amount of time and then exit, and programs intended to be run forever. For the first kind, we can just fire and forget – they'll clean up after themselves. The second kind needs management. In this short story, we'll discuss how to manage long running processes like web servers, web crawlers, and other infinite loops:
     - `ps` – which shows you all the processes your user is currently running.
         - Let's also talk about `ps gv` which shows you a bit more detail, including memory utilization.
@@ -28,9 +29,9 @@ Our topic: **Three Triplets on the Terminal**! Today, we'll explore three sets o
     - *With a special bonus appearance from:*
         - `nano` – the worst text editor ever, but since we're in the terminal, i guess...
         - `top` – a better version of `ps`.
-- **Vignette #3: Local Area Networking** Your browser is basically a really fancy rendering engine that sends and recieves HTTP traffic. If we strip all of the rendering away, we get something that's basically equivalent to `curl`, a option-laden utility that sends and received HTTP traffic.
+- **Vignette #3: Local Area Networking** Your browser is basically a really fancy rendering engine that sends and recieves HTTP traffic. If we strip all of the rendering away, we get something that's basically equivalent to `curl`, a option-laden utility that sends and receives HTTP traffic through the terminal.
     - `man` – a command that shows you the documentation for another terminal command. Yes, it has an unfortunate name; it's a shortening of `man`ual. *Warning:* Not all commands have manual pages.
     - `curl` – a general purpose tool for sending and receiving HTTP traffic (and lots of other kinds of network traffic). The full scope of curl is way beyond us, but everything you would ever want to know about it is [here](https://ec.haxx.se/).
         - Sending a post request with `curl -X POST`
         - Sending a post request with a header using `curl -X POST -H "{Key}: {Value}"`
-- **Extra Credit: Not for Completion in Lab.** Download and install node.
+- **Extra Credit: Not for Completion in Lab.** Try to run the server in `session-02/vignette-03` on your own. This will include downloading and installing `node` and `npm`, installing the dependencies for the server with `npm install`, and running the server with `node index.js`.
