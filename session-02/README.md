@@ -34,4 +34,6 @@ Our topic: **Three Triplets on the Terminal**! Today, we'll explore three sets o
     - `curl` – a general purpose tool for sending and receiving HTTP traffic (and lots of other kinds of network traffic). The full scope of curl is way beyond us, but everything you would ever want to know about it is [here](https://ec.haxx.se/).
         - Sending a post request with `curl -X POST`
         - Sending a post request with a header using `curl -X POST -H "{Key}: {Value}"`
+    - *With a special bonus appearance from:*
+        - a really dumb game that I made for the occasion.
 - **Extra Credit: Not for Completion in Lab.** Try to run the server in `session-02/vignette-03` on your own. This will include downloading and installing `node` and `npm`, installing the dependencies for the server with `npm install`, and running the server with `node index.js`.
