@@ -5,11 +5,15 @@ body {
 }
 
 /* Styling for the win screen */
-.done {
+.win {
     background-color: hotpink;
 }
 
-.done * {
+.loss {
+    background-color: black;
+}
+
+.win *, .loss * {
     display: none;
 }
 

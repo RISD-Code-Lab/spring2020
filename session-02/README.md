@@ -7,6 +7,7 @@ Our topic: **Three Triplets on the Terminal**! Today, we’ll explore three sets
 *Note: This guide assumes you’re using macOS. Due to our own deficiencies, we are not able to support Windows users at this time. Dear Windows users: we’re sorry. Please find a macOS user near you to look on with; many of the concepts we’re covering are transferrable.*
 
 - **Prelude: `whoami`**. Just what is this terminal thing? Why would we use it instead of a GUI, like Finder? Also, how do I make it look nice with the fonts and colors I want.
+    - How to type?
 - **Vignette #1: Location and Navigation.** Let’s get comfortable moving back and forth between the computer’s GUI in Finder, and the terminal. We’ll cover commands like:
     - `pwd` – which tells you where your terminal is in the filesystem right now.
     - `ls` – which tells you what’s in a directory (the pre-Finder word for “Folder”).
@@ -14,7 +15,7 @@ Our topic: **Three Triplets on the Terminal**! Today, we’ll explore three sets
     - `cd` – which allows you to move your terminal around through the filesystem, just like clicking on folders in Finder.
     - *With a special bonus appearance from:*
         - `open` – a macOS utility program that lets you open files, addresses, and locations in their default programs.
-        -  `clear` and `cmd-K` – free up your visual real estate.
+        -  `clear` or `cmd-K` – free up your visual real estate.
     - For those who want another look at the terminal, [this video](https://www.youtube.com/watch?v=V4ShSik25Wo) has more information.
 - **Vignette #2: The Lifecycle of a Software Process**. There are two kinds of processes, programs that run for a finite amount of time and then exit, and programs intended to be run forever. For the first kind, we can just fire and forget – they’ll clean up after themselves. The second kind needs management. In this short story, we’ll discuss how to manage long running processes like web servers, web crawlers, and other infinite loops:
     - `ps` – which shows you all the processes your user is currently running.
@@ -49,4 +50,3 @@ The terminal is a command line interface to your computer. It lets you navigate 
 - **installing libraries and packages** often, someone else has written a tool that does something you need. These tools are often command line programs, and, further, are often installed via the command line.
 - **training machine learning models** in tensorflow or pytorch. Most machine learning development is done in python using deep learning libraries like tensorflow and pytorch. These are exclusively run through the commandline.
 - **reading documentation and expanding your knowledge** Once you get past the basis with web development, many resources and tutorials assume you're familiar with the command line. Not having a basic knowledge of the command line will slow you down. When it comes to machine learning, 100% of the resources I've seen (with the exception of RunwayML and ml5.js) assume terminal fluency. If you're interested in trying your own architectures or training custom models on a GPU, this is absolutely essential.
-

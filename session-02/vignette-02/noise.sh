@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # How wide a range?
-SIZE=3
+SIZE=9
 
 # Where to start?
 # ( 32 to 37 is a good range, as is 91 - 97 )

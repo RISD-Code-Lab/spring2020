@@ -19,12 +19,14 @@ var player = {id:"player", type: "player", display: "centered", x: 50, y: 90, dx
 
 var game = [
     {id: "goal", type: "goal", display: "centered", x: 50, y: 10, w: 1.5, h: 1.5},
-    {id: "block-A", type: "wall", x: 10, y: 45, w: 80, h: 5}
+    {id: "block-A", type: "wall", x: 10, y: 45, w: 55, h: 5},
+    {id: "block-B", type: "wall", x: 55, y: 65, w: 35, h: 10}
 ];
 
 const framerate = 30;
 const increment = 0.005;
 const indicators = true;
+var count = 0;
 
 socket.on('ip', function( data ) {
     $(document).ready(function() {
@@ -61,14 +63,18 @@ function update(object) {
         .css('top', object.y + 'vh')
         .css('left', object.x + 'vw');
 
-    if (indicators && (object.dx != 0 || object.dy != 0)) {
+    if (indicators && (object.dx != 0 || object.dy != 0) && count % 100 == 0) {
         var indicator = $('<div>')
             .addClass('indicator')
             .css('top', object.y + 'vh')
             .css('left', object.x + 'vw');
 
         $('body').append(indicator);
+
+        count = 1;
     }
+
+    count += 1;
 
 }
 
@@ -116,12 +122,17 @@ function intersects(player, object) {
 
 function check(player, game) {
 
-    var finished = game.reduce(function(state, object) {
-        return state || intersects(player, object)
-    }, false);
+    var state = game.reduce(function(state, object) {
 
-    if (finished) {
-        $('body').removeClass('running').addClass('done');
+        state.over = state.over || intersects(player, object)
+        state.win = state.win || state.over && object.type == "goal";
+
+        return state
+
+    }, {over: false, win: false});
+
+    if (state.over) {
+        $('body').removeClass('running').addClass((state.win) ? "win" : "loss");
         console.log(player);
         console.log(game);
     }
