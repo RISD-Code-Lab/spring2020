@@ -14,6 +14,14 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 
 # Schedule
 
+## Code Lab Session 3: Ready, Set, Loop
+We’ll be introducing fundamental programming concepts that are relevant both on the web with JavaScript ( / jQuery), as well as Python.
+
+- Basic Datatypes (Integers, Strings, Variables, Booleans)
+- Structures (Lists, Objects)
+- Iteration (Loops)
+- Functions and Methods
+
 ## Code Lab Session 2: Let’s talk terminal
 
 - Introduction to the terminal
