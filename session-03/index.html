@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sentence Generator_Step2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+		/*  =========================================================================
+		    1. make an array of words
+		    ==========================================================================   */
+	    	
+			var nouns1 = [ "lorem", "ipsum", "dolor", "sit", "amet"];
+            var nouns2 = [ "consectetur", "adipiscing", "elit", "cras", "et"];
+            var adjs = [ "consectetur", "adipiscing", "elit", "cras", "et"];
+			
+			// Array: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+		
+
+	    /*  =========================================================================
+		    2. take each array and pick a word at random 
+		    ==========================================================================   */
+	    
+			function pickRandomWord(x){
+				y = x[Math.floor(Math.random()*x.length)];
+				return y;
+			}
+
+
+			// Math.floor: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
+		    // Math.random: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+		    // Array.length: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
+
+
+	    /*  =========================================================================
+		    3. print a random word from the array on the browser
+		    ==========================================================================   */
+
+			function printRandomWord() {					   
+			
+				// call the function from step 2 for each list
+				var random_noun1 = pickRandomWord(nouns1);
+				var random_noun2  = pickRandomWord(nouns2);
+				var random_adj = pickRandomWord(adjs);
+
+				// print the selected word from list on the browser
+					$('.first-noun').html(random_noun1);
+					$('.adj').html(random_noun2);
+					$('.second-noun').html(random_adj);
+				// .html(): http://api.jquery.com/html/
+
+			}
+	
+			// call the function when the html page is initially loaded
+			printRandomWord();
+
+			// call the function when a user click a button 
+			$('button').click(function(){		
+				printRandomWord();
+			});
+
+			//.click(): https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click
+
+		});
+	    </script>
+		<p>
+			<span class="first-noun"></span> is a <span class="adj"></span> <span class="second-noun"></span>.
+		</p>
+		<button>Generate!</button>
+		<style>
+			body {
+				font-size: 4rem;
+			}
+			.first-noun {
+				color:blue;
+			}
+			.adj {
+				color:red;
+			}
+			.second-noun{
+				color:green;
+			}
+		</style>
+	</body>	
+</html>
