@@ -17,6 +17,7 @@ Our topic: **Three Triplets on the Terminal**! Today, we’ll explore three sets
         - `open` – a macOS utility program that lets you open files, addresses, and locations in their default programs.
         -  `clear` or `cmd-K` – free up your visual real estate.
     - For those who want another look at the terminal, [this video](https://www.youtube.com/watch?v=V4ShSik25Wo) has more information.
+    - If you'd like a more comprehensive reference, [check this website out](https://ss64.com/).
 - **Vignette #2: The Lifecycle of a Software Process**. There are two kinds of processes, programs that run for a finite amount of time and then exit, and programs intended to be run forever. For the first kind, we can just fire and forget – they’ll clean up after themselves. The second kind needs management. In this short story, we’ll discuss how to manage long running processes like web servers, web crawlers, and other infinite loops:
     - `ps` – which shows you all the processes your user is currently running.
         - Let’s also talk about `ps gv` which shows you a bit more detail, including memory utilization.
