@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Sentence Generator_Step2</title>
+        <title>Code Lab Session3: Sentence Generator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
     </head>
@@ -65,18 +65,48 @@
 				printRandomWord();
 			});
 
-			//.click(): https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click
+            //.click(): https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click
+            
 
-		});
+
+        });
+
+        // generate a sentence over time, without click
+
+        // setTimeout(function(){
+        //         window.location.reload();
+        // }, 400); // milliseconds, so 10 seconds = 10000ms
+
+        //timers https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/Timers
+
 	    </script>
 		<p>
 			<span class="first-noun"></span> is a <span class="adj"></span> <span class="second-noun"></span>.
 		</p>
 		<button>Generate!</button>
 		<style>
+            /* overwrite default styles */
 			body {
-				font-size: 4rem;
-			}
+                font-size: 8rem;
+                padding: 2rem;
+            }
+            button {
+                font-size: 4rem;
+                color:black;
+                border: solid 2px;
+                padding: 1rem;
+                cursor:pointer;
+            }
+            button:hover {
+                background-color: black;
+                color:white;
+            }
+            p {
+                margin-block-start: .5em;
+                margin-block-end: .5em;
+            }
+            /* variable components */
+            p
 			.first-noun {
 				color:blue;
 			}
