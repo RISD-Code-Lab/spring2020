@@ -27,9 +27,10 @@
 		    2. take each array and pick a word at random 
 		    ==========================================================================   */
 	    
-			function pickRandomWord(x){
-				y = x[Math.floor(Math.random()*x.length)];
-				return y;
+			function pickRandomWord(wordList){
+				var randomIndex = Math.floor(Math.random()*wordList.length);
+				var randomWord = wordList[randomIndex];
+				return randomWord;
 			}
 
 
@@ -45,14 +46,14 @@
 			function printRandomWord() {					   
 			
 				// call the function from step 2 for each list
-				var random_noun1 = pickRandomWord(nouns1);
-				var random_noun2  = pickRandomWord(nouns2);
-				var random_adj = pickRandomWord(adjs);
+				var randomNoun1 = pickRandomWord(nouns1);
+				var randomNoun2  = pickRandomWord(nouns2);
+				var randomAdj = pickRandomWord(adjs);
 
 				// print the selected word from list on the browser
-					$('.first-noun').html(random_noun1);
-					$('.adj').html(random_noun2);
-					$('.second-noun').html(random_adj);
+					$('.first-noun').html(randomNoun1);
+					$('.adj').html(randomNoun2);
+					$('.second-noun').html(randomAdj);
 				// .html(): http://api.jquery.com/html/
 
 			}
