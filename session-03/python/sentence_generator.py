@@ -3,10 +3,9 @@ from math import floor
 from random import random
 
 
-nouns1 = [ "lorem", "ipsum", "dolor", "sit", "amet"]
-nouns2 = [ "consectetur", "adipiscing", "elit", "cras", "et"]
-adjs = [ "consectetur", "adipiscing", "elit", "cras", "et"]
-
+nouns1 = ["elephant", "rabbit", "shrimp", "tiger", "turtle" ];
+nouns2 = [ "clementine", "orange", "kiwi", "durian"];
+adjs = [ "orange", "soft", "shrimpy"];
 
 def pick_random_word(words):
 	"""Given a list of words, returns a word randomly selected from it.""" 
@@ -21,7 +20,6 @@ def pick_random_word(words):
 
 	# outputs a random word
 	return random_word;
-
 
 
 def make_sentence():

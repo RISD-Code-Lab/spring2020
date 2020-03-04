@@ -6,82 +6,108 @@
         <title>Code Lab Session3: Sentence Generator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+        	
+        	// console.log('this is my javascript');
+
+        	// function sayHello() {
+        	// 	console.log("Hi!");
+        	// 	alert("Hello World!");
+        	// }
+
+        	// sayHello();
+
+        	// var x = 5;
+
+        	// if (x === 2) {
+        	//   console.log("x is 2");
+        	// }
+        	// else if (x === 3){
+        	//   console.log("x is 3");
+        	// }
+        	// if( x !== 2 && x!== 3) {
+        	//   console.log("x is neither 2 nor 3");
+        	// }
+
+
+    		$(document).ready(function() {
+
+    		/*  =========================================================================
+    		    1. make an array of words
+    		    ==========================================================================   */
+    	    	
+    			var nouns1 = ["elephant", "rabbit", "shrimp", "tiger", "turtle" ];
+                var nouns2 = [ "clementine", "orange", "kiwi", "durian"];
+                var adjs = [ "orange", "soft", "shrimpy"];
+    			
+    			// Array: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+    		
+
+    	    /*  =========================================================================
+    		    2. take each array and pick a word at random 
+    		    ==========================================================================   */
+    	    
+    			function pickRandomWord(wordList){
+    				var randomIndex = Math.floor(Math.random()*wordList.length);
+    				// console.log("randomIndex", randomIndex);
+
+    				var randomWord = wordList[randomIndex];
+    				// console.log("randomWord", randomWord);
+    				return randomWord;
+    			}
+
+
+    			// Math.floor: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
+    		    // Math.random: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    		    // Array.length: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
+
+
+    	    /*  =========================================================================
+    		    3. print a random word from the array on the browser
+    		    ==========================================================================   */
+
+    			function makeSentence(){					   
+    			
+    				// call the function from step 2 for each list
+    				var randomNoun1 = pickRandomWord(nouns1);
+    				var randomNoun2  = pickRandomWord(nouns2);
+    				var randomAdj = pickRandomWord(adjs);
+
+    				// print the selected word from list on the browser
+    				$('.first-noun').html(randomNoun1);
+    				$('.adj').html(randomAdj);
+    				$('.second-noun').html(randomNoun2);
+
+    				// .html(): http://api.jquery.com/html/
+
+    			}
+    	
+    			// call the function when the html page is initially loaded
+    			makeSentence();
+
+    			// call the function when a user click a button 
+    			$('button').click(function(){		
+    				makeSentence();
+    			});
+
+                //.click(): https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click
+          		
+
+          		// generate a sentence over time, without click
+          		setInterval(function(){
+          		     makeSentence();
+          		}, 400); // milliseconds, so 10 seconds = 10000ms
+
+            });
+
+          
+            //timers https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/Timers
+
+        </script>
     </head>
     <body>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function() {
-
-		/*  =========================================================================
-		    1. make an array of words
-		    ==========================================================================   */
-	    	
-			var nouns1 = [ "lorem", "ipsum", "dolor", "sit", "amet"];
-            var nouns2 = [ "consectetur", "adipiscing", "elit", "cras", "et"];
-            var adjs = [ "consectetur", "adipiscing", "elit", "cras", "et"];
-			
-			// Array: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-		
-
-	    /*  =========================================================================
-		    2. take each array and pick a word at random 
-		    ==========================================================================   */
-	    
-			function pickRandomWord(wordList){
-				var randomIndex = Math.floor(Math.random()*wordList.length);
-				var randomWord = wordList[randomIndex];
-				return randomWord;
-			}
-
-
-			// Math.floor: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
-		    // Math.random: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-		    // Array.length: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
-
-
-	    /*  =========================================================================
-		    3. print a random word from the array on the browser
-		    ==========================================================================   */
-
-			function printRandomWord() {					   
-			
-				// call the function from step 2 for each list
-				var randomNoun1 = pickRandomWord(nouns1);
-				var randomNoun2  = pickRandomWord(nouns2);
-				var randomAdj = pickRandomWord(adjs);
-
-				// print the selected word from list on the browser
-					$('.first-noun').html(randomNoun1);
-					$('.adj').html(randomNoun2);
-					$('.second-noun').html(randomAdj);
-				// .html(): http://api.jquery.com/html/
-
-			}
-	
-			// call the function when the html page is initially loaded
-			printRandomWord();
-
-			// call the function when a user click a button 
-			$('button').click(function(){		
-				printRandomWord();
-			});
-
-            //.click(): https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click
-            
-
-
-        });
-
-        // generate a sentence over time, without click
-
-        // setTimeout(function(){
-        //         window.location.reload();
-        // }, 400); // milliseconds, so 10 seconds = 10000ms
-
-        //timers https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/Timers
-
-	    </script>
-		<p>
+	   	<p>
 			<span class="first-noun"></span> is a <span class="adj"></span> <span class="second-noun"></span>.
 		</p>
 		<button>Generate!</button>
