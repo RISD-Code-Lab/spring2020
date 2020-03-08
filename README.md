@@ -1,6 +1,8 @@
 # Code Lab Spring 2020
 
-Wednesdays 5:00pm–6:30pm | Design Center Room 212
+Wednesdays 5:00pm–6:30pm | Design Center Room 212*
+
+*NOTE: For Wednesday March 11, we will be in Design Center **Room 501**.
 
 Nic Schumann (nschuman@risd.edu),
 Minkyoung Kim (mkim37@risd.edu),
@@ -13,6 +15,9 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 👉**Please [sign up here](https://docs.google.com/spreadsheets/d/1UJF4e9RK39tvByTza2kSOql0mAdfO2C_T2cvvQUYP0s/edit?usp=sharing) by the Sunday prior to the session you plan to attend.** This way we can plan for the appropriate number of students.
 
 # Schedule
+
+## Code Lab Session 4: Ready, set, loop with jQuery
+Based off of the concepts introduced last week, we’ll have a hands-on workshop using [jQuery](https://jquery.com/). We’ll also introduce the JSON data structure as a possible application of JavaScript.
 
 ## Code Lab Session 3: Ready, set, loop
 We’ll be introducing fundamental programming concepts that are relevant both on the web with JavaScript / jQuery, as well as Python.
