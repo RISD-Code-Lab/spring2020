@@ -53,10 +53,10 @@
                     // toggle the copy of the button
                     // more resource: https://css-tricks.com/swapping-out-text-five-different-ways/
                     var el = $(this);
-                    if (el.text() == el.data('copy-swap')) {
-                        el.text(el.data('copy-original')) 
-                    } else {
+                    if (el.text() == el.data('copy-original')) {
                         el.text(el.data('copy-swap'));
+                    } else {
+                        el.text(el.data('copy-original'));
                     }
            
                     // toggle divs 
