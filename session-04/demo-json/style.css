@@ -1,0 +1,14 @@
+body{
+	font-family: serif;
+	font-size: 18px;
+	line-height: .9;
+}
+
+.location{
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.no-death{
+	color: rgb(120,120,120);
+}
