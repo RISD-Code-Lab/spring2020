@@ -30,16 +30,16 @@ You can think a HTML document as a nested stracture of html as a tree of objects
 
 This page has the following structure:
 
-![](http://url/to/domtree.png)
+![](./images/domtree.png)
 
 Like this, the HTML DOM model is constructed as a tree of Objects. This object model is used by browsers to specify the logical structure of web pages, and based on this structure to render HTML elements on the screen. 
 
 
 ### How to implement jQuery
 
-[Download jQuery](https://jquery.com/download).
+[Download jQuery](https://jquery.com/download)
 
-To implement jQuery in your project, download the “compressed, production jQuery” package of the latest version. Move the jQuery script you download into your project’s javascripts folder, and link to it before including your other JavaScript files.
+To implement jQuery in your project, download the “compressed, production jQuery” package of the latest version. Locate the jQuery script you download into your project’s javascripts folder, and link to it before including your other JavaScript files:
 
 ```
 <!DOCTYPE html>
@@ -67,11 +67,11 @@ $(function() {
 });
 ```
 
-The jQuery basic syntax is `$(selector).action()`.
+The jQuery basic syntax is `$(selector).action()`:
 
-`$` sign define jQuery.
-A `(selector)` defines “query (or find)” HTML elements
-A `action()` to be performed on the element's.
+- `$` sign define jQuery.
+- A `(selector)` defines “query (or find)” HTML elements
+- A `action()` to be performed on the element's.
 
 
 ### What is JSON?
