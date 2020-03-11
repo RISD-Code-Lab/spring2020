@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Code Lab Session4: Jquery Toggle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <style>
+            body {
+                margin:2rem;
+            }
+            button {
+                position: absolute;
+                bottom: 2rem;
+                display: block;
+                font-size: 4rem;
+                color:black;
+                border: solid 2px;
+                padding: 1rem;
+                cursor:pointer;
+                margin:0 auto;
+            }
+            div {
+                display: inline-block;
+                min-width: 40px;
+                min-height: 40px;
+                background-color:black;
+                margin:1rem;
+            }
+            .red {
+                background-color: red;
+            }
+            .blue {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="group1 red"></div>
+        <div class="group1 red"></div>
+        <div class="group1 red"></div>
+        <div class="group1 red"></div>
+        <div class="group1 red"></div>
+        <div class="group1 red"></div>
+        <div class="group1 red"></div>
+        <div class="group1 red"></div>
+        <div class="group1 red"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="group2"></div>
+        <div class="group2"></div>
+        <div class="group2"></div>
+        <div class="group2"></div>
+        <div class="group2"></div>
+        <div class="group2"></div>
+        <div class="group2"></div>
+        <div class="group2"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <button data-copy-swap="Show" data-copy-original="Hide">Hide</button>
+        <script type="text/javascript">
+            // toggle the copy of the button
+            $('button').on('click', function() {
+            var el = $(this);
+            el.text() == el.data('copy-swap') 
+                ? el.text(el.data('copy-original')) 
+                : el.text(el.data('copy-swap'));
+            });
+
+            function pickRandomWord(wordList){
+            var randomIndex = Math.floor(Math.random()*wordList.length);
+            var randomWord = wordList[randomIndex];
+            return randomWord;
+            };
+
+            // toggle items 
+            $(document).ready(function() {
+                $('button').click(function() {
+                    $('div').toggle();
+                    // $(this).prev().toggle();
+                    // $('.group1').toggleClass('red');
+                    // $('.group2').toggleClass('blue');
+                });
+            });
+        </script>
+    </body>	
+</html>
