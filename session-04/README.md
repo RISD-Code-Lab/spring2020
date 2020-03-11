@@ -111,10 +111,10 @@ To load JSON data using jQuery, use the getJSON() and ajax() method. The jQuery.
   <script>
          $(document).ready(function() {
             $("button").click(function(event){
-               $.getJSON('yourjson.json', function(jd) {
-                  $('#color').html('<p>Red:' + jd.r+ '</p>');
-                  $('#color').append('<p>Green:' + jd.g+ '</p>');
-                  $('#color').append('<p>Blue:' + jd.b+ '</p>');
+               $.getJSON('yourjson.json', function(mycolor) {
+                  $('#color').html('<p>Red:' + mycolor.r+ '</p>');
+                  $('#color').append('<p>Green:' + mycolor.g+ '</p>');
+                  $('#color').append('<p>Blue:' + mycolor.b+ '</p>');
                });
             });
                
