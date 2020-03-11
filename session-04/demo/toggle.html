@@ -48,19 +48,12 @@
         <div></div>
         <script type="text/javascript">
             // toggle the copy of the button
-            $('button').on('click', function() {
-            var el = $(this);
-            el.text() == el.data('copy-swap') 
-                ? el.text(el.data('copy-original')) 
-                : el.text(el.data('copy-swap'));
-            });
-
-            function pickRandomWord(wordList){
-            var randomIndex = Math.floor(Math.random()*wordList.length);
-            var randomWord = wordList[randomIndex];
-            return randomWord;
-            };
-
+                $('button').on('click', function() {
+                var el = $(this);
+                el.text() == el.data('copy-swap') 
+                    ? el.text(el.data('copy-original')) 
+                    : el.text(el.data('copy-swap'));
+                }); 
             // toggle items 
             $(document).ready(function() {
                 $('button').click(function() {
