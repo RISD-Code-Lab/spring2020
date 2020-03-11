@@ -47,20 +47,21 @@
         <div></div>
         <div></div>
         <script type="text/javascript">
-            // toggle the copy of the button
-                $('button').on('click', function() {
-                var el = $(this);
-                el.text() == el.data('copy-swap') 
-                    ? el.text(el.data('copy-original')) 
-                    : el.text(el.data('copy-swap'));
-                }); 
-            // toggle items 
             $(document).ready(function() {
                 $('button').click(function() {
+
+                    // toggle the copy of the button
+                    var el = $(this);
+                    el.text() == el.data('copy-swap') 
+                    ? el.text(el.data('copy-original')) 
+                    : el.text(el.data('copy-swap'));
+
+                    // toggle items 
                     $('div').toggle();
                     // $(this).next().toggle();
                     // $('.group1').toggleClass('red');
                     // $('.group2').toggleClass('blue');
+                    
                 });
             });
         </script>
