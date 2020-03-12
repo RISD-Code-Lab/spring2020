@@ -1,2 +1,9 @@
-node_modules
+# Apple Bologna / Boloney
 .DS_Store
+
+# NPM Modules and Requirements
+node_modules
+
+
+# Python Modules and Requirements
+.env
