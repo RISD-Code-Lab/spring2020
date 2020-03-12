@@ -9,14 +9,16 @@ function writeLocationName( location ) {
 }
 
 
-function drawLocation( location, scale ) {
+function drawLocation( location, scale) {
 
     let locationHTML = "";
 
     // Get the number of cases, and scale it by the specific math function 
     // that was supplied as the 'scale' argument.
-    let numberOfCases = location["Confirmed"];
-    let fontSize = scale(numberOfCases)
+    let numberOfCases = location["Confirmed"]; //output a number for Confirmed: xx
+    let fontSize = scale(numberOfCases);
+
+    // let fontSize = numberOfCases/100;
 
     let status = "";
     if ( location["Deaths"] == 0 ){
@@ -25,7 +27,6 @@ function drawLocation( location, scale ) {
 
     // build the HTML string
     locationHTML += '<div class="location' + status + '">';
-
     locationHTML += '<div class="name" style="font-size:' + fontSize +'px">';
     locationHTML += writeLocationName(location);
     locationHTML += '</div></div>';
@@ -46,11 +47,21 @@ $(document).ready(function() {
 
     $.getJSON('js/coronavirus_data_10MAR2020.json', function(data) {
     
-        let logarithmicScale = function( numberOfCases ) { return Math.log(numberOfCases) * 10; };
+        let logarithmicScale = function( numberOfCases ) { 
+            return Math.log(numberOfCases) * 10; 
+        };
         let linearScale = function( numberOfCases ) { return numberOfCases / 100; };
 
+        // console.log('length of data', data.length);
+        // for (var i=0; i<data.length; i++){
+        //     console.log( i, data[i] );
+        //     // html += drawLocation( data[i] );
+        // }
         $.each(data, function(i, location){
             
+            // console.log(location);
+            
+            // html += drawLocation(location, logarithmicScale);
             if (location["Confirmed"] !== 0){
                 html += drawLocation(location, logarithmicScale);
             }
@@ -60,3 +71,23 @@ $(document).ready(function() {
     });
 
 });
+
+
+// $(document).ready(function() {
+
+//     let html = "";
+
+//     $.getJSON('js/emoji.json', function(data) {
+    
+
+//         $.each(data, function(i, emoji){
+            
+//             // console.log(location);
+//             html += emoji["char"];
+           
+//         });
+
+//         $('main').append(html);
+//     });
+
+// });
