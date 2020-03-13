@@ -16,6 +16,9 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 
 # Schedule
 
+## Code Lab Session 5: Ready, set, loop with Drawbot
+Based off of the concepts introduced two weeks ago in Session 3, we’ll have a hands-on workshop using Python 3 and [Drawbot](https://jquery.com/). 
+
 ## Code Lab Session 4: Ready, set, loop with jQuery
 Based off of the concepts introduced last week, we’ll have a hands-on workshop using [jQuery](https://jquery.com/). We’ll also introduce the JSON data structure as a possible application of JavaScript.
 
