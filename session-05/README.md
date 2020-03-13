@@ -42,4 +42,4 @@ This will dump the complete list of current dependencies into the requirements.t
 
 ## Basics
 
-**Code Will be Posted on Sunday, 3/15*
+**Code Will be Posted on Sunday, 3/15**
