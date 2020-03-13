@@ -1,6 +1,6 @@
 # Ready, Set, Loop with Python & DrawBot
 
-⚠️ **Code Lab has moved online!** Please join us at this Google Hangouts link to participate. Sign in with your RISD email.
+⚠️ **Code Lab has moved online!** Please join us at [this Google Hangouts link](https://meet.google.com/rxe-vivf-fsx) to participate. Sign in with your RISD email.
 
 Let's explore the concepts we learned in our basic programming lecture in the context of python and DrawBot. For this session, you'll need a few things, hopefully all of which are within your grasp to get set up.
 
