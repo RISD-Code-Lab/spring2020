@@ -14,7 +14,7 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 
 👉**Please [sign up here](https://docs.google.com/spreadsheets/d/1UJF4e9RK39tvByTza2kSOql0mAdfO2C_T2cvvQUYP0s/edit?usp=sharing) by the Sunday prior to the session you plan to attend.** This way we can plan for the appropriate number of students.
 
-⚠️ **Code Lab has moved online!** Please join us at [this Google Hangouts](https://meet.google.com/rxe-vivf-fsx) link to participate. Sign in with your RISD email.
+⚠️ **Code Lab has moved online!** Please join us at [this Zoom](https://risd.zoom.us/j/299845160) link to participate. Sign in with your RISD email.
 
 # Schedule
 
