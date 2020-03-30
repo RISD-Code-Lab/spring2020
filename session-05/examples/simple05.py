@@ -1,6 +1,6 @@
 from drawBot import *
 
-# Let's add some more "constants" up tom
+# Let's add some more "constants" up top
 # (ie, inputs to our drawing program that won't change during the run.)
 W=1000
 H=1000
@@ -8,9 +8,11 @@ SPF=(1/30)
 
 
 # This recipe defines a sequence of steps for our simple "animation engine"
-# To follow. Each step will render a frame with the named font, and scale factor.
+# To follow. We're going to use the same set of basic keypoints as last time,
+# but this time we're going to give them a new meaning by creating an
+# interpolation routine.
 #
-keypoints = [
+keypoint_coordinates = [
 	#   center        sides       border
 	(   (.050, .500), (.10, .10), 0), # first keypoint
 	(   (.500, .150), (.30, .30), 0), # second keypoint
@@ -19,7 +21,18 @@ keypoints = [
 	(   (.050, .500), (.10, .10), 0) # first keypoint
 ]
 
-
+# The interpolation routine is a rotuine that operates on recipes
+# Given a recipe, and a number of steps, it interpolates linearly between
+# each step in the recipe, `steps` number of times. So, an animation
+# generated with the above list of 5 keypoints, and a steps parameter
+# of 5 ==> interpolate_recipe(keypoint_coordinates, 5),
+# would create a new recipe with 21 steps in it. Why?
+#
+# – What happens if you change the number of steps?
+# – What happens if you change the interpolation formula below?
+# – What happens if you call this routine on a recipe with border parameters
+# - What about negative border parameters?
+#
 def interpolate_recipe(recipe, steps):
 	new_recipe = []
 	for index in range(len(recipe) - 1):
@@ -52,7 +65,12 @@ def interpolate_recipe(recipe, steps):
 
 	return new_recipe
 
-recipe = interpolate_recipe(keypoints, 50)
+# Generate frames!
+frames = interpolate_recipe(keypoint_coordinates, 10)
+
+# – What happens if you call interpolate recipe multiple times?
+# uncomment below to find out:
+# frames = interpolate_recipe(frames, 10)
 
 
 # ------------------------------------------------------------------------------
@@ -79,11 +97,11 @@ def new_frame():
 	fill(0,0,0)
 	rect(0,0, W, H)
 
-# Redefine make animation to take our recipe, which contains
-# A list of Fonts
-def make_animation(recipe, output="simple-05.gif"):
+# No change to this one
+# – Now what happens if you move draw_frame outside the loop?
+def make_animation(frames, output="simple-05.gif"):
 
-	for object in recipe:
+	for object in frames:
 		new_frame()
 		center, sides, border = object
 		draw_box(center, sides, border)

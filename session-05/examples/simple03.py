@@ -7,11 +7,22 @@ H=1000
 SPF=0.1
 
 
+# Take the list of borders and reverse it
+# so that the animation bounces in and out.
+borders = [ 10, 20, 40, 80, 160, 320 ]
+borders = borders + [*reversed(borders)]
 
-recipe = [ 10, 20, 40, 80, 160, 320 ]
-recipe = recipe + [*reversed(recipe)]
+# Linearly ramp the border value out
+# from a starting value to an ending value.
+def linear_borders(start, end, steps):
+	borders = []
+	for i in range(steps):
+		t = i / steps
+		borders.append( t*(end-start) + start )
 
+	return borders
 
+borders = linear_borders(10, 500, 100)
 # ------------------------------------------------------------------------------
 # Library Of Functions
 # ------------------------------------------------------------------------------
@@ -26,7 +37,7 @@ def draw_frame(border):
 
 
 # Redefine make animation to take our recipe, which contains
-# A list of Fonts
+# A list of borders.
 def make_animation(recipe, output="simple-03.gif"):
 
 	for border in recipe: draw_frame(border)
@@ -34,7 +45,7 @@ def make_animation(recipe, output="simple-03.gif"):
 	saveImage(output)
 
 # Draw the animation and save it.
-make_animation(recipe)
+make_animation(borders)
 # makeAnimation(message, output="test.pdf") # uncomment if you want to look at a PDF. useful for debugging.
 
 
