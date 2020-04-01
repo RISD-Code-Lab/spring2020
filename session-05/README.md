@@ -26,23 +26,7 @@ $ python3 -m venv .env
 $ source .env/bin/activate
 ```
 
-Now, let's install all of the libraries that we'll need to run to use drawBot. The list of these is included in `requirements.txt`. Don't freak out, though you don't have to install these all by hand. Just run:
-
-```sh
-# Install the list of requirements automatically.
-$ pip install -r requirements.txt
-```
-
-And python will install all of them for you. If you ever install a new module, it's a good practice to record that new module in the list. Again, don't freak out, you don't have to record this stuff by hand. Just run:
-
-```sh
-# Update the list of requirements when something changes.
-$ pip freeze > requirements.txt
-```
-
-This will dump the complete list of current dependencies into the requirements.txt file, for future `pip install` calls.
-
-Sometimes, this kind of install process won't work. This can happen if the package you're installing isn't managed by python or registered on PyPI, the Python Package Index. Unfortunately, this is the case with the `drawBot` module. But no worries, we can install it from the git repository directly. Run:
+We can install `drawBot` it from the git repository directly. Run:
 
 ```sh
 # Install drawBot
@@ -50,8 +34,6 @@ $ pip install git+https://github.com/typemytype/drawbot
 ```
 
 This will download drawbot and build all of its dependencies.
-
-
 
 ## Introduction
 
