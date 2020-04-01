@@ -42,6 +42,17 @@ $ pip freeze > requirements.txt
 
 This will dump the complete list of current dependencies into the requirements.txt file, for future `pip install` calls.
 
+Sometimes, this kind of install process won't work. This can happen if the package you're installing isn't managed by python or registered on PyPI, the Python Package Index. Unfortunately, this is the case with the `drawBot` module. But no worries, we can install it from the git repository directly. Run:
+
+```sh
+# Install drawBot
+$ pip install git+https://github.com/typemytype/drawbot
+```
+
+This will download drawbot and build all of its dependencies.
+
+
+
 ## Introduction
 
 In the previous lab session, we touched on the basics of jQuery, using the special API (a conceptual framework embodied by a set of functions and methods that expose functionality to a programmer) that jQuery makes available to us to manipulate the DOM and parse an external JSON file. We saw that having the right language available to us (like jQuery `$('.selector')` notation) makes it much easier for us to get more done with less thought and energy.
