@@ -18,6 +18,11 @@ The lab section will be about 90 minutes and will meet 6 to 9 times over the cou
 
 # Schedule
 
+
+## Code Lab Session 6: Variable Fonts and JavaScript
+This week will be a quick workshop on using variable fonts with JavaScript, making your fonts interactive!
+We’ll also reserve the second half of the class to general questions / technical Q&A.
+
 ## Code Lab Session 5: Ready, set, loop with Drawbot
 Based off of the concepts introduced two weeks ago in Session 3, we’ll have a hands-on workshop using Python 3 and [Drawbot](https://jquery.com/). 
 
