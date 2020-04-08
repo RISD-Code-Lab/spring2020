@@ -48,3 +48,41 @@ The `font-variation-settings` is the CSS property for variable fonts.
 
 - Read more with the [Open Type specs](https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg)
 - Read a [caveat for italics](https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-support)
+
+# + jQuery
+
+For a review on jQuery, check back to our notes from [Code Lab session 4](https://github.com/RISD-Code-Lab/cl-spring2020/tree/master/session-04).
+
+Some useful jQuery methods you might use include:
+
+ - Click
+```js
+$('.yourelement').on('click', function() {
+	// do something when .yourelement is clicked
+});
+```
+
+ - Hover / Mouseover
+```js
+$('.yourelement').on('mousemove', function(e) {
+	// e is a parameter that captures the event
+	console.log( e.pageX ); // mouse x-coordinate 
+	console.log( e.pageY ); // mouse y-coordimate
+});
+```
+
+- Sliders
+```js
+$('input[type=range]').on('input', function(){
+	 console.log( $(this).val() ); // value of slider input
+});
+```
+
+- Class manipulation
+```js
+$('.triggerelement').on('click', function(){
+	$('.targetelement').addClass('classname'); // adds classname
+	$('.targetelement').removeClass('classname'); // removes classname
+	$('.targetelement').toggleClass('classname'); // toggles classname: adds it if it doesn’t have it, removes it otherwise
+});
+```
