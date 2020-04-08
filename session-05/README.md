@@ -2,7 +2,7 @@
 
 ⚠️ **Code Lab has moved online!** Please join us at [this Zoom link](https://risd.zoom.us/j/299845160) to participate. Sign in with your RISD email.
 
-🎥 **We recorded a walkthrough of this README on April 1, 2020.** Find that video in this folder [here](https://drive.google.com/drive/u/1/folders/16JYAiNXY3YaXdd2UtqKkQx2xqiFoW9LQ). Click on the `session-05` file.
+🎥 **We recorded a walkthrough of this README on April 1, 2020.** Find that video [here](https://drive.google.com/open?id=1XDlS23ga7ie7kWUSaDDi3Z51hK65w_A8).
 
 Let's explore the concepts we learned in our basic programming lecture in the context of python and DrawBot. For this session, you'll need a few things, hopefully all of which are within your grasp to get set up.
 
