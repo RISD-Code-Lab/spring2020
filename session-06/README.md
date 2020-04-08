@@ -1,4 +1,4 @@
-# Variable Fonts
+# Introduction to Variable Fonts
 
 ## What’s a variable font?
 A variable font is a single font file contains many different variations of a typeface, instead of having a separate font file for every style of the type family. This format was developed in collaboration by Adobe, Apple, Google, and Microsoft.
