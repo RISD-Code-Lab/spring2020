@@ -16,6 +16,10 @@ A variable font is a single font file contains many different variations of a ty
 - Lack of support, especially in Desktop programs
 - Compromised drawing flexibility — difficulty in developing compatibile outlines
 
+## Futher Reference (Post-Meeting) 
+- [OpenType Variable Fonts: Moving Right Along](https://www.typenetwork.com/brochure/opentype-variable-fonts-moving-right-along/)
+- [Typetura](https://typetura.scottkellum.com/typetura-js)
+
 ## Variable Fonts and CSS
 You can import a variable font in the same way as any other typeface, using the `@font-face` rule.
 Variable fonts can be set by CSS, using `font-variation-settings.`
