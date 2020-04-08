@@ -10,9 +10,11 @@ A variable font is a single font file contains many different variations of a ty
 - Purer expression of type design process
 - Options!
 
+*See more on [We Are Family! I’ve Got All My Variations With Me](https://vimeo.com/251494096) with David Jonathan Ross*
+
 ### Disadvantages of variable fonts
-- Lack of support
-- Difficulty in developing compatibile outlines
+- Lack of support, especially in Desktop programs
+- Compromised drawing flexibility — difficulty in developing compatibile outlines
 
 ## Variable Fonts and CSS
 You can import a variable font in the same way as any other typeface, using the `@font-face` rule.
@@ -30,10 +32,10 @@ p{
 }
 ```
 
-The `font-variation-settings` is the CSS propety for variable fonts. 
+The `font-variation-settings` is the CSS property for variable fonts. 
 - Values for multiple axes are separated by `,`
 - Each axis name is in in between `' '` marks, with the value after it
-- Standard axes for variation are in lowercase, custom axes are in uppercase
+- Standard axes for variation are in **lowercase**, custom axes are in **uppercase**
 
 ### Standard (registered) axes
 |syntax| description | Non-VF equivalent 
