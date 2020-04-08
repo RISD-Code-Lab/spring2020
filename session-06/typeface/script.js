@@ -13,5 +13,9 @@ $(document).ready(function(){
 
 	});
 
+	$('#play').click(function(){
+		$('#face').toggleClass('animated');
+	});
+
 });
 	
