@@ -49,9 +49,9 @@ The `font-variation-settings` is the CSS property for variable fonts.
 - Read more with the [Open Type specs](https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg)
 - Read a [caveat for italics](https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-support)
 
-# + jQuery
+# jQuery Review
 
-For a review on jQuery, check back to our notes from [Code Lab session 4](https://github.com/RISD-Code-Lab/cl-spring2020/tree/master/session-04).
+For a review on jQuery, check back to our notes from [Code Lab session 4](https://github.com/RISD-Code-Lab/cl-spring2020/tree/master/session-04) and the [jQuery lecture slides](https://drive.google.com/open?id=1OtUk6oscLMCWcnWABUfOOfygT5P_BhSi-18GCEGcnHY).
 
 Some useful jQuery methods you might use include:
 
