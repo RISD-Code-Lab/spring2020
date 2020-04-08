@@ -1,0 +1,36 @@
+@font-face {
+   font-family: 'TypeFace';
+   src: url('TypeFaceGX.ttf') format("truetype-variations");
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+main{
+   font-family: 'TypeFace';
+	text-align: center;
+   min-height: 100vh;
+}
+
+#face{
+   --brow-axis: 50;
+   --mouth-axis: 50;
+	font-size: 100vh;
+   line-height: .5;
+   transition: color 300ms linear;
+   font-variation-settings: 'BROW' var(--brow-axis), 'MOUT' var(--mouth-axis);
+}
+
+nav{
+   position: fixed;
+   width: 100vw;
+   bottom: 0;
+   padding: 3em 0;
+   text-align: center;
+}
+
+.field{
+   display: inline-block;
+}
