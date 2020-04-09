@@ -19,6 +19,7 @@ A variable font is a single font file contains many different variations of a ty
 - Compromised drawing flexibility — difficulty in developing compatibile outlines
 
 ## Futher Reference (Post-Meeting) 
+- [A Variable Fonts Primer](https://variablefonts.io/)
 - [OpenType Variable Fonts: Moving Right Along](https://www.typenetwork.com/brochure/opentype-variable-fonts-moving-right-along/)
 - [Typetura](https://typetura.scottkellum.com/typetura-js)
 
