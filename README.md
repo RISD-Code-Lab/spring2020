@@ -16,6 +16,8 @@ Marie Otsuka (motsuka@risd.edu)
 
 # Schedule
 
+## Code Lab Session 7: Drawing with p5.js
+In this session, we will be introducing how to use p5.js library for interactive graphics. We’ll also have an open Q&A session, in which you can ask questions about this topic, or other code topics on your mind.
 
 ## Code Lab Session 6: Variable Fonts and JavaScript
 This week will be a quick workshop on using variable fonts with JavaScript, making your fonts interactive!
