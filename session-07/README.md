@@ -47,7 +47,7 @@ function draw() {
 - For custom shapes, you will need to define a series of points by using `vertex()`, that are connected via lines to form the outline of a shape.
 
 ### Color
-You can also control not just the shapes that you draw, but also two main aspects of those shapes’ appearance: color and outline. You can check the color numbering system in depth here: [Processing: Color Tutorial](https://www.processing.org/tutorials/color/)
+With RGB numbering system, you can adjust color and opacity: [p5.js: color](https://p5js.org/learn/color.html)
 
 
 ### Coordinates
