@@ -81,7 +81,6 @@ function draw(){
 
     background(0);
     fill(255);  
-    noStroke();
 
     circle(mouseX, mouseY, diameter);    
 }
