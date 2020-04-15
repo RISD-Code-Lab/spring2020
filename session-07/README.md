@@ -1,6 +1,9 @@
 # Drawing with p5.js
 
-🎥 We recorded a walkthrough of this README on April 15, 2020. Find that video [here](https://drive.google.com/file/d/1eSo_13KC1S-TS-9Xqc2aQ69QYbsvkC35/view?usp=sharing).
+🎥 **We recorded a walkthrough of this README on April 15, 2020.** Find that video [here](https://drive.google.com/file/d/1eSo_13KC1S-TS-9Xqc2aQ69QYbsvkC35/view?usp=sharing).
+
+![a p5 sketch by Marie from the session](images/session-07-result.gif)
+
 
 
 ## What is p5.js?
@@ -24,8 +27,8 @@ function setup() {
 
 function draw() {
 }
-
 ```
+
 - The `setup()` function only runs when the program starts, it can not be callsed again after initial execution. You will put initial environment properties such as canvas size and load the media files(images, fonts, ...). The program contains only one `setup()`function. 
 - The `draw()` function is called after `setup()` function. You will use `draw()` function to execute the code inside the canvas. It runs as a loop — the code inside the `draw()` function runs continuously from top to bottom until the program is stopped. The `draw()` loop may be stopped by calling `noLoop()`, and can then be resumed with `loop()`. If using `noLoop()` in `setup()`, it should be the last line inside the block. 
 
@@ -87,7 +90,6 @@ function draw(){
 
     circle(mouseX, mouseY, diameter);    
 }
-
 ```
 
 
@@ -131,6 +133,7 @@ function draw(){
 ## Loop
 
 If you want to have multiple items and play with them, rather than having an individual line of codes that same thing over and over agian, we can use another control structure `loop`. 
+
 ```
 function setup(){
     createCanvas(windowWidth, windowHeight);
@@ -196,6 +199,8 @@ function draw(){
 }
 ```
 
-
+Finally, we are sharing M
 ## Other Resources
 - [Code! Programming with p5.js](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
+
+
