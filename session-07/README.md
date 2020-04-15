@@ -1,5 +1,8 @@
 # Drawing with p5.js
 
+🎥 We recorded a walkthrough of this README on April 15, 2020. Find that video [here](https://drive.google.com/file/d/1eSo_13KC1S-TS-9Xqc2aQ69QYbsvkC35/view?usp=sharing).
+
+
 ## What is p5.js?
 
 [https://p5js.org/](https://p5js.org/)
