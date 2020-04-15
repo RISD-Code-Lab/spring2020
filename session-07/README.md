@@ -2,9 +2,7 @@
 
 🎥 **We recorded a walkthrough of this README on April 15, 2020.** Find that video [here](https://drive.google.com/file/d/1eSo_13KC1S-TS-9Xqc2aQ69QYbsvkC35/view?usp=sharing).
 
-![a p5 sketch by Marie from the session](images/session-07-result.gif)
-
-
+![p5 sketch by Marie from the session](images/session-07-result.gif)
 
 ## What is p5.js?
 
