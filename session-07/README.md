@@ -48,11 +48,12 @@ function draw() {
 - You can create [simple shapes](https://p5js.org/examples/hello-p5-simple-shapes.html) such as circle, square, triangle, and a flower. 
 - For custom shapes, you will need to define a series of points by using `vertex()`, that are connected via lines to form the outline of a shape.
 - The function call ends with the semicolon `;`. You need to put a semicolon at the end of every function call.
-- You can also control not just the shapes that you draw but also two main aspects of those shapes’ appearance: color and outline. You can check the color numbering system in depth here: [Processing Color Tutorial](https://www.processing.org/tutorials/color/)
+- You can also control not just the shapes that you draw, but also two main aspects of those shapes’ appearance: color and outline. You can check the color numbering system in depth here: [Processing: Color Tutorial](https://www.processing.org/tutorials/color/)
 
 
 ## Coordinates
 P5.js takes pixel as a basic unit. The pixel in the top left corner of the browser is designated as the pixel at coortinate `0,0`. From there, x and y coorinate increases as you move further right and down.  
+
 For more information 👉 [Processing: Coordinate System and Shapes](https://processing.org/tutorials/drawing/) 
 
 
@@ -87,7 +88,8 @@ function draw(){
 ## Conditoinal
 You can have more controls of your motion flow by using a `if-else` statement. The `if` statement executes a statement if a specified condition is truthy. When the condition is falsy, another statement can be executed.
 
-- More resources  👉 [Mozilla: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else), [CodeLab Session3: Ready, set, loop](https://drive.google.com/open?id=1Sj5Cb_e4d3axEdMtFBGxQj-OiRFIZie4Om1kbvo5fjk)
+More resources 👇
+- [Mozilla: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else), - [CodeLab Session3: Ready, set, loop](https://drive.google.com/open?id=1Sj5Cb_e4d3axEdMtFBGxQj-OiRFIZie4Om1kbvo5fjk)
 
 ```
 var x = 0;
@@ -155,7 +157,8 @@ function draw(){
 ## DOM Elements
 
 Add button, slider, or any html elements as an interaction trigger!
-[p5.js Element](https://p5js.org/reference/#/p5.Element)
+
+More inforrmation here 👉 [p5.js Element](https://p5js.org/reference/#/p5.Element)
 
 ```
 var slider; 
