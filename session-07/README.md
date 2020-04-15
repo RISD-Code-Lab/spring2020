@@ -28,7 +28,7 @@ function draw() {
 
 
 
-## Shape and Color
+## Drawing
 
 ```
 function setup() {
@@ -41,19 +41,24 @@ function draw() {
     circle(250, 250, 200);
 }
 ```
+
+### Shapes
 - You can create [simple shapes](https://p5js.org/examples/hello-p5-simple-shapes.html) such as circle, square, triangle, and a flower. 
 - For custom shapes, you will need to define a series of points by using `vertex()`, that are connected via lines to form the outline of a shape.
-- The function call ends with the semicolon `;`. You need to put a semicolon at the end of every function call.
-- You can also control not just the shapes that you draw, but also two main aspects of those shapes’ appearance: color and outline. You can check the color numbering system in depth here: [Processing: Color Tutorial](https://www.processing.org/tutorials/color/)
-- Like this, p5.js comes with built-in **functions** that perform various tasks. Functions comes with a pair of parentheses; inside these parentheses are a list of values, seperated by commma. These values defines the function’s parameters, and each function use its parameters in a slightly different way. Learning how to program in p5.js is mostly about learning what each functions does, and what its parameters mean.
 
-You can check more functions here 👉[p5.js](https://p5js.org/reference/)
+### Color
+You can also control not just the shapes that you draw, but also two main aspects of those shapes’ appearance: color and outline. You can check the color numbering system in depth here: [Processing: Color Tutorial](https://www.processing.org/tutorials/color/)
 
 
-## Coordinates
+### Coordinates
 P5.js takes pixel as a basic unit. The pixel in the top left corner of the browser is designated as the pixel at coortinate `0,0`. From there, x and y coorinate increases as you move further right and down.  
 
 For more information 👉 [Processing: Coordinate System and Shapes](https://processing.org/tutorials/drawing/) 
+
+### Function Calls 
+Like this, p5.js comes with built-in **functions** that perform various tasks. Functions comes with a pair of parentheses; inside these parentheses are a list of values, seperated by commma. The function call ends with the semicolon `;`. You need to put a semicolon at the end of every function call.
+
+These values defines the function’s parameters, and each function use its parameters in a slightly different way. Learning how to program in p5.js is mostly about learning what each functions does, and what its parameters mean. You can check more functions here 👉[p5.js](https://p5js.org/reference/)
 
 
 ## Variables
