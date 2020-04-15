@@ -89,7 +89,8 @@ function draw(){
 You can have more controls of your motion flow by using a `if-else` statement. The `if` statement executes a statement if a specified condition is truthy. When the condition is falsy, another statement can be executed.
 
 More resources 👇
-- [Mozilla: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else), - [CodeLab Session3: Ready, set, loop](https://drive.google.com/open?id=1Sj5Cb_e4d3axEdMtFBGxQj-OiRFIZie4Om1kbvo5fjk)
+- [Mozilla: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else), 
+- [CodeLab Session3: Ready, set, loop](https://drive.google.com/open?id=1Sj5Cb_e4d3axEdMtFBGxQj-OiRFIZie4Om1kbvo5fjk)
 
 ```
 var x = 0;
