@@ -159,7 +159,8 @@ function draw(){
 
 Add button, slider, or any html elements as an interaction trigger!
 
-More inforrmation here 👉 [p5.js Element](https://p5js.org/reference/#/p5.Element)
+- More information about DOM 👉 [Code Lab Session 4: Ready, set, loop — jQuery](https://github.com/RISD-Code-Lab/cl-spring2020/tree/master/session-04)
+- More p5.js DOM elements 👉 [p5.js Element](https://p5js.org/reference/#/p5.Element)
 
 ```
 var slider; 
