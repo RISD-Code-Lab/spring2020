@@ -114,7 +114,6 @@ function draw(){
 	
 	background(0);
 	fill(255);  
-	noStroke();
 	circle(x, y, diameter);
 
 	if (x > width) {
@@ -146,14 +145,12 @@ function draw(){
 
     while (x <=windowWidth) {
         fill(255); 
-        noStroke();
         circle(x, y - 100, 10);
         x = x + 50;
     }
 
     for (var x = 0; x <= windowWidth; x = x + 50){
         fill(255); 
-        noStroke();
         circle(x, y + 100 , 10);
     }
 }
@@ -191,7 +188,6 @@ function draw(){
 
     background(bgcolor);    
     fill(255);  
-    noStroke();
 
     circle(x, y, slider.value());
 }
