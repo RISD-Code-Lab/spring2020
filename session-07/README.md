@@ -92,34 +92,34 @@ You can have more controls of your motion flow by using a `if-else` statement. T
 - More resources: [Mozilla: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else), [CodeLab Session3: Ready, set, loop](https://drive.google.com/open?id=1Sj5Cb_e4d3axEdMtFBGxQj-OiRFIZie4Om1kbvo5fjk)
 
 ```
-	var x = 0;
-	var speed = 10;
+var x = 0;
+var speed = 10;
 
-	function setup(){
-		createCanvas(windowWidth, windowHeight);
+function setup(){
+	createCanvas(windowWidth, windowHeight);
+}
+
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
+function draw(){
+	var y = height / 2;
+	var diameter = min(width, height) * 0.5;
+	
+	background(0);
+	fill(255);  
+	noStroke();
+	circle(x, y, diameter);
+
+	if (x > width) {
+		speed = -10;
+	} else if ( x < 0 ) {
+		speed = 10;
 	}
-
-	function windowResized() {
-		resizeCanvas(windowWidth, windowHeight);
-	}
-
-	function draw(){
-		var y = height / 2;
-		var diameter = min(width, height) * 0.5;
-		
-		background(0);
-		fill(255);  
-		noStroke();
-		circle(x, y, diameter);
-
-		if (x > width) {
-			speed = -10;
-		} else if ( x < 0 ) {
-			speed = 10;
-		}
-		
-		x = x + speed;
-	}
+	
+	x = x + speed;
+}
 ```
 
 ### Loop
