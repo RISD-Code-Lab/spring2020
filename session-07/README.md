@@ -27,10 +27,6 @@ function draw() {
 - The `draw()` function is called after `setup()` function. You will use `draw()` function to execute the code inside the canvas. It runs as a loop — the code inside the `draw()` function runs continuously from top to bottom until the program is stopped. The `draw()` loop may be stopped by calling `noLoop()`, and can then be resumed with `loop()`. If using `noLoop()` in `setup()`, it should be the last line inside the block. 
 
 
-Like this, p5.js comes with built-in **functions** that perform various tasks. Functions comes with a pair of parentheses; inside these parentheses are a list of values, seperated by commma. These values defines the function’s parameters, and each function use its parameters in a slightly different way. Learning how to program in p5.js is mostly about learning what each functions does, and what its parameters mean.
-
-You can check more functions here 👉[p5.js](https://p5js.org/reference/)
-
 
 ## Shape and Color
 
@@ -49,6 +45,9 @@ function draw() {
 - For custom shapes, you will need to define a series of points by using `vertex()`, that are connected via lines to form the outline of a shape.
 - The function call ends with the semicolon `;`. You need to put a semicolon at the end of every function call.
 - You can also control not just the shapes that you draw, but also two main aspects of those shapes’ appearance: color and outline. You can check the color numbering system in depth here: [Processing: Color Tutorial](https://www.processing.org/tutorials/color/)
+- Like this, p5.js comes with built-in **functions** that perform various tasks. Functions comes with a pair of parentheses; inside these parentheses are a list of values, seperated by commma. These values defines the function’s parameters, and each function use its parameters in a slightly different way. Learning how to program in p5.js is mostly about learning what each functions does, and what its parameters mean.
+
+You can check more functions here 👉[p5.js](https://p5js.org/reference/)
 
 
 ## Coordinates
