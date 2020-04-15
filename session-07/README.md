@@ -7,21 +7,19 @@
 P5.js is a JavaScript library based on Processing. Processing is an open-source graphical library that is developed to make it easy as possible for beginners to learn how to program interactive, graphical applications.
 
 
-### Get Started
+## Get Started
 There are a few ways to write p5.js sketches. As p5.js is just another Javascript library, you can always include p5.js file like how you use other JS files. You can download a single file, or a complate library [here](https://p5js.org/download/) based on your needs.
 You can also begin using p5.js directly on the browser by using [editor.p5js.org](https://editor.p5js.org/), it is a a web-based programming platform specifically built for p5.js. 
 
 
-### Setup
+## Setup
 The basic setup to create p5.js sketch is calling function `setup()` and `draw()`.
 
 ```
 function setup() {
-	//initial setup will come here.
 }
 
 function draw() {
-	//dynamic content will come here.
 }
 
 ```
@@ -34,7 +32,7 @@ Like this, p5.js comes with built-in **functions** that perform various tasks. F
 You can check more functions here 👉[p5.js](https://p5js.org/reference/)
 
 
-### Shape and Color
+## Shape and Color
 
 ```
 function setup() {
@@ -53,12 +51,12 @@ function draw() {
 - You can also control not just the shapes that you draw but also two main aspects of those shapes’ appearance: color and outline. You can check the color numbering system in depth here: [Processing Color Tutorial](https://www.processing.org/tutorials/color/)
 
 
-### Coordinates
+## Coordinates
 P5.js takes pixel as a basic unit. The pixel in the top left corner of the browser is designated as the pixel at coortinate `0,0`. From there, x and y coorinate increases as you move further right and down.  
 For more information 👉 [Processing: Coordinate System and Shapes](https://processing.org/tutorials/drawing/) 
 
 
-### Variables
+## Variables
 
 Variables are used for storing values. With variables, we can create interesting effect like motion, interactions, etc, by using this loop — we can vary what happens each time it is looping (every time `draw` excutes).
 
@@ -86,10 +84,10 @@ function draw(){
 ```
 
 
-### Conditoinal
+## Conditoinal
 You can have more controls of your motion flow by using a `if-else` statement. The `if` statement executes a statement if a specified condition is truthy. When the condition is falsy, another statement can be executed.
 
-- More resources: [Mozilla: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else), [CodeLab Session3: Ready, set, loop](https://drive.google.com/open?id=1Sj5Cb_e4d3axEdMtFBGxQj-OiRFIZie4Om1kbvo5fjk)
+- More resources  👉 [Mozilla: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else), [CodeLab Session3: Ready, set, loop](https://drive.google.com/open?id=1Sj5Cb_e4d3axEdMtFBGxQj-OiRFIZie4Om1kbvo5fjk)
 
 ```
 var x = 0;
@@ -122,7 +120,7 @@ function draw(){
 }
 ```
 
-### Loop
+## Loop
 
 If you want to have multiple items and play with them, rather than having an individual line of codes that same thing over and over agian, we can use another control structure `loop`. 
 ```
@@ -154,7 +152,7 @@ function draw(){
 }
 ```
 
-### DOM Elements
+## DOM Elements
 
 Add button, slider, or any html elements as an interaction trigger!
 [p5.js Element](https://p5js.org/reference/#/p5.Element)
@@ -190,3 +188,7 @@ function draw(){
     circle(x, y, slider.value());
 }
 ```
+
+
+## Other Resources
+- [Code! Programming with p5.js](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
