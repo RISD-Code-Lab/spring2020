@@ -2,9 +2,7 @@
 
 🎥 **We recorded a walkthrough of this README on April 15, 2020.** Find that video [here](https://drive.google.com/file/d/1eSo_13KC1S-TS-9Xqc2aQ69QYbsvkC35/view?usp=sharing).
 
-![p5 sketch made by Marie during the session](images/session-07-result.gif)
-
-P5 sktech result made by Marie from the session on April 15, 2020
+![p5 sketch sample made by Marie during the session](images/session-07-result.gif). See `color-pen` folder for code.
 
 ## What is p5.js?
 
@@ -15,6 +13,7 @@ P5.js is a JavaScript library based on Processing. Processing is an open-source 
 
 ## Get Started
 There are a few ways to write p5.js sketches. As p5.js is just another Javascript library, you can always include p5.js file like how you use other JS files. You can download a single file, or a complate library [here](https://p5js.org/download/) based on your needs.
+
 You can also begin using p5.js directly on the browser by using [editor.p5js.org](https://editor.p5js.org/), it is a a web-based programming platform specifically built for p5.js. 
 
 
@@ -73,7 +72,7 @@ Variables are used for storing values. With variables, we can create interesting
 
 In this example, I changed the values of variables to affect the composition. 
 
-```
+```js
 function setup(){
     createCanvas(windowWidth, windowHeight);
 }
@@ -93,14 +92,14 @@ function draw(){
 ```
 
 
-## Conditoinal
+## Conditionals
 You can have more controls of your motion flow by using a `if-else` statement. The `if` statement executes a statement if a specified condition is truthy. When the condition is falsy, another statement can be executed.
 
 More resources 👇
 - [Mozilla: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) 
 - [CodeLab Session3: Ready, set, loop](https://drive.google.com/open?id=1Sj5Cb_e4d3axEdMtFBGxQj-OiRFIZie4Om1kbvo5fjk)
 
-```
+```js
 var x = 0;
 var speed = 10;
 
@@ -134,7 +133,7 @@ function draw(){
 
 If you want to have multiple items and play with them, rather than having an individual line of codes that same thing over and over agian, we can use another control structure `loop`. 
 
-```
+```js
 function setup(){
     createCanvas(windowWidth, windowHeight);
     background(0); 
@@ -163,7 +162,7 @@ function draw(){
 
 ## DOM Elements
 
-Add button, slider, or any html elements as an interaction trigger!
+Add a button, slider, or any html elements as an interaction trigger!
 
 - More information about DOM 👉 [Code Lab Session 4: Ready, set, loop — jQuery](https://github.com/RISD-Code-Lab/cl-spring2020/tree/master/session-04)
 - More p5.js DOM elements 👉 [p5.js Element](https://p5js.org/reference/#/p5.Element)
