@@ -3,7 +3,8 @@
 
 # NPM Modules and Requirements
 node_modules
-
+.cache
+dist
 
 # Python Modules and Requirements
 .env

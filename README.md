@@ -16,6 +16,9 @@ Marie Otsuka (motsuka@risd.edu)
 
 # Schedule
 
+## Code Lab Session 8: Playing with ml5.js
+In this session, We'll connect a webcam to a pre-trained machine learning model with the ml5.js library. We'll build on our skills with HTML, CSS, and Javascript to build a fun demo of machine learning technology in the browser. There will be a short Q&A at the end ~ maybe 10 minutes.
+
 ## Code Lab Session 7: Drawing with p5.js
 In this session, we will be introducing how to use p5.js library for interactive graphics. We’ll also have an open Q&A session, in which you can ask questions about this topic, or other code topics on your mind.
 
@@ -24,7 +27,7 @@ This week will be a quick workshop on using variable fonts with JavaScript, maki
 We’ll also reserve the second half of the class to general questions / technical Q&A.
 
 ## Code Lab Session 5: Ready, set, loop with Drawbot
-Based off of the concepts introduced two weeks ago in Session 3, we’ll have a hands-on workshop using Python 3 and [Drawbot](https://jquery.com/). 
+Based off of the concepts introduced two weeks ago in Session 3, we’ll have a hands-on workshop using Python 3 and [Drawbot](https://jquery.com/).
 
 ## Code Lab Session 4: Ready, set, loop with jQuery
 Based off of the concepts introduced last week, we’ll have a hands-on workshop using [jQuery](https://jquery.com/). We’ll also introduce the JSON data structure as a possible application of JavaScript.
@@ -50,11 +53,11 @@ We’ll be introducing fundamental programming concepts that are relevant both o
 - Text editors
 - HTML, CSS, & JS: How it all comes together
 - File and folder naming, where they live (paths), and how to access them (hyperlinks)
-- CSS Cascading (css order and hierarchy) 
+- CSS Cascading (css order and hierarchy)
 - Development environment setup
 - Testing & Debugging
 
-We will be designing future sessions based off of student needs and interests over the course of the semester. 
+We will be designing future sessions based off of student needs and interests over the course of the semester.
 
 # Lectures
 Past lecture slides are accessible on [Google Drive](https://drive.google.com/open?id=1Hf3KJXnk7XSb8Xmy0DBtrlfkVhqaygkB)
@@ -65,4 +68,3 @@ Past lecture slides are accessible on [Google Drive](https://drive.google.com/op
 - Iteration (loops, etc)
 - APIs and libraries
 - & more...
-
