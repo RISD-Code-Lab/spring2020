@@ -1,61 +1,35 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.overlay {
-  position: fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  height:100vh;
-  background-color: black;
-  z-index: 1000;
-}
-
-.video-wrapper {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-.video-wrapper.loading {
-  background-color: gray;
-}
-.video-wrapper.loading #video {
-  display: none;
+#video-wrapper {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 #video {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  border: 1px solid red;
+  width: 640px;
+  height: 480px;
 }
 
 .detection {
-  position: fixed;
-  transition: all;
-  transition-duration: .05s;
-
+  position: absolute;
 }
 
-.point {
-  background: yellow;
+.keypoint {
   width: 10px;
   height: 10px;
-  border-radius: 5px;
-  z-index: 100;
-  display: none;
-}
-
-.nose {
-  background-color: red;
+  background-color: magenta;
+  transition: all;
+  transition-duration: .1s;
 }
 
 .emoji {
-  position: absolute;
-  display: block;
-  font-size: 12em;
-  transform: translate(-50%,-50%);
+  font-size: 10em;
+  transform: translate(-50%,-55%);
 }
