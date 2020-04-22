@@ -2,6 +2,9 @@
 
 This week, we're going to use ml5.js, a user-friendly browser-based machine learning library to draw emojis on our faces.
 
+🎥 **We recorded a walkthrough of this README on April 15, 2020.** Find that video [here](https://drive.google.com/open?id=1wXDNiVeJkW2zqI2ucPoW9WxzoaNgiDEJ).
+
+
 ![mask](images/mask.gif).
 
 ## ml5.js?
