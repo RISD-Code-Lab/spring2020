@@ -16,8 +16,11 @@ Marie Otsuka (motsuka@risd.edu)
 
 # Schedule
 
+## Code Lab Session 9: Publishing to the Web 
+In our final session, we will be demonstrating some workflows for web publishing, including an introduction to servers, hosting, DNS / domains, with a Q&A.
+
 ## Code Lab Session 8: Playing with ml5.js
-In this session, We'll connect a webcam to a pre-trained machine learning model with the ml5.js library. We'll build on our skills with HTML, CSS, and Javascript to build a fun demo of machine learning technology in the browser. There will be a short Q&A at the end ~ maybe 10 minutes.
+In this session, we’ll connect a webcam to a pre-trained machine learning model with the ml5.js library. We'll build on our skills with HTML, CSS, and Javascript to build a fun demo of machine learning technology in the browser. There will be a short Q&A at the end ~ maybe 10 minutes.
 
 ## Code Lab Session 7: Drawing with p5.js
 In this session, we will be introducing how to use p5.js library for interactive graphics. We’ll also have an open Q&A session, in which you can ask questions about this topic, or other code topics on your mind.
