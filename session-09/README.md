@@ -150,4 +150,5 @@ More details [here](https://help.github.com/en/github/working-with-github-pages/
 
 # Further Resources
 - [Code Lab Lecture Slide](https://docs.google.com/presentation/d/1_6LeYPWzoSjFBiTLR7v7vH-cE_HkqUus1JfOibOGQkw/edit?usp=sharing)
+- [Github: Getting Started](https://docs.google.com/document/d/1vk6vJiTXhBOPzLV6Qt5Xkc3Q-IgyIl4uN5zsw0bEttY/edit?usp=sharing)
 
