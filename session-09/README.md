@@ -2,6 +2,8 @@
 
 For our final code lab, we’ll be covering some logistics in what goes into making a website live.
 
+🎥 **We recorded a walkthrough of this README on April 29, 2020.** Find that video [here](https://drive.google.com/open?id=1qDX1-zQ7J_EWG5QSJ3y_A24N1JRm9pdP).
+
 
 # Background
 
