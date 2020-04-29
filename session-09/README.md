@@ -51,7 +51,9 @@ For static sites:
 ## Domains
 An IP (Internet Protocol) is a machine-readable specific identification number assigned to a device (computer, printer, etc) within a particular computer network, such as `198.7.247.225`.
 
-A DNS, or Domain Name Server provides the human-readable version of the IP, mapping domain names (such as `risd.edu`) to IP addresses.
+A DNS, or Domain Name Server translates human-readable domain names (such as `risd.edu`) to computer-readable IP addresses. DNS providers allow you to register and manage domains.
+
+A TLD, or Top-level Domain, is the last two / three letters after the `.`, such as `edu`, `com`, `org`, managed by ICANN (Internet Corporation for Assigned Names and Numbers). There are new TLDs released periodically. 
 
 ### Subdomains
 Subdomains are extensions of the main domain (such as `notices.risd.gd`). Once you’ve registered and purchased a domain name, you can add additional subdomain addresses under the primary domain. This is useful when you’d like to create multiple websites under one domain.
@@ -118,4 +120,32 @@ Most shared hosting services have a control panel or admin interface that allows
 
 ## Post launch
 - Monitor site 
+
+# Demo
+## Github + Custom Domain @ Namecheap
+1. Push your code to your repository
+	- Include an `index.html` file as your homepage
+2. Enable [Github Pages](https://pages.github.com/) in your repostiory settings
+3. Test via the provided URL (`https://username.github.io` or `https://username.github.io/repository`)
+4. Register your domain name at a DNS provider
+5. Add your domain name to your Github Repository settings under Github Pages
+6. Create either an `ALIAS`, `ANAME`, or `A` record with your DNS provider (Different DNS Providers may use different methods.)
+For example, for Namecheap, create the following `A` records to point to Github’s servers.
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+7. Add a `CNAME` file (with no file format extension) with your domain name to your repository
+
+More details [here](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site).
+
+## Shared Hosting @ Dreamhost + FTP
+1. Setup your hosting system.
+2. Download / open your FTP client
+3. Use the (S)FTP details provided by your hosting provider to access your remote server
+4. Upload your website files to the remote server via your FTP client
+5. If your domain registrar is the same as your hosting system, you should be all set. If not, register your domain name, and follow the hosting provider’s instructions to connect your domain name to your web space. (It will be similar to steps 4—6 for Github above.) 
+
 
