@@ -2,10 +2,6 @@
 
 For our final code lab, we’ll be covering some more logistics in what goes into making a website live.
 
-Specifically, we’ll demo publishing two methods:
-1. Github Pages
-2. FTP
-
 
 # Background
 
@@ -58,13 +54,13 @@ An IP (Internet Protocol) is a machine-readable specific identification number a
 A DNS, or Domain Name Server provides the human-readable version of the IP, mapping domain names (such as `risd.edu`) to IP addresses.
 
 ### Subdomains
-Subdomains are extensions of the main domain. Once you’ve registered and purchased a domain name, you can add additional subdomain addresses under the primary domain. This is useful when you’d like to create multiple websites under one domain.
+Subdomains are extensions of the main domain (such as `notices.risd.gd`). Once you’ve registered and purchased a domain name, you can add additional subdomain addresses under the primary domain. This is useful when you’d like to create multiple websites under one domain.
 
 [risd.gd](https://risd.gd/), for example, uses subdomains for its more specific websites related to the graphic design department.
 
 Often, subdomains are also used to have separate environments — or copies — of your website: one for development, one for a preview, one for the live production environment. This way, you can test out new features or styles on your website without putting your live website "under construction."
 
-### Common Domain name providers
+### Some Domain name providers
 - [Namecheap](http://www.namecheap.com/)
 - [Google Domains](https://domains.google/)
 - [GoDaddy](https://www.godaddy.com/)
@@ -107,7 +103,7 @@ Popular ones include:
 
 ## Before launch
 - Test, test, test!
-	- check your site on all major browsers
+	- check your site on all major browsers — you can also try tools like [Browser Shots](http://browsershots.org/) and [Browser Stack](https://www.browserstack.com/)
 	- for iPhones, use your Desktop inspector while connecting to your iPhone (on Safari)
 - Validate
 	- [HTML validator](https://validator.w3.org/)
@@ -118,5 +114,5 @@ Popular ones include:
 - Connect the domain name to your serverspace
 
 ## Post launch
-- Monitor behavior
+- Monitor site 
 
