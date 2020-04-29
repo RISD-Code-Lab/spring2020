@@ -149,5 +149,5 @@ More details [here](https://help.github.com/en/github/working-with-github-pages/
 5. If your domain registrar is the same as your hosting system, you should be all set. If not, register your domain name, and follow the hosting provider’s instructions to connect your domain name to your web space. (It will be similar to steps 4—6 for Github above.) 
 
 # Further Resources
-- [Lecture Slide](https://docs.google.com/presentation/d/1_6LeYPWzoSjFBiTLR7v7vH-cE_HkqUus1JfOibOGQkw/edit?usp=sharing)
+- [Code Lab Lecture Slide](https://docs.google.com/presentation/d/1_6LeYPWzoSjFBiTLR7v7vH-cE_HkqUus1JfOibOGQkw/edit?usp=sharing)
 
