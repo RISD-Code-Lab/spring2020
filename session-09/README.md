@@ -1,6 +1,6 @@
 # Launching a wesbsite
 
-For our final code lab, we’ll be covering some more logistics in what goes into making a website live.
+For our final code lab, we’ll be covering some logistics in what goes into making a website live.
 
 
 # Background
@@ -80,14 +80,15 @@ P.S.: a story about [keeping your domain name.](http://therealjonas.com/)
 - SSL configurations
 - Energy source
 
-## Pushing files remote
-There are many methods to pushing your local files to the remote server.
+## Transfer
+There are several methods to pushing your local files to the remote server.
 
 ### Terminal
 Using your terminal, you can navigate to the folder that is the root of your website.
 From there you can use various terminal-based commands to setup your remote connection and push your files accordingly. Some common command-line tools are:
 - [`git`](https://help.github.com/en/github/using-git/getting-started-with-git-and-github)
 - [`rsync`](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps)
+These programs use `ssh` / `https` protocols to connect to a remote server and transfer files.
 
 ### FTP Software
 FTP programs, or clients, provide an interface for uploading your web files to your remote server.
@@ -98,6 +99,8 @@ Popular ones include:
 - [Cyberduck](https://cyberduck.io/)
 - [Filezilla](https://filezilla-project.org/)
 
+### Hosting Service Control Panel
+Most shared hosting services have a control panel or admin interface that allows you to upload files to their server when you are logged into their website. That said, this interface may not the easiest way to navigate your server files.
 
 # Workflow
 
