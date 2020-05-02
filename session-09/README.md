@@ -66,6 +66,7 @@ Often, subdomains are also used to have separate environments — or copies — 
 
 ### Some Domain name providers
 - [Namecheap](http://www.namecheap.com/)
+- [Gandi.net](https://www.gandi.net/en-US)
 - [Google Domains](https://domains.google/)
 - [GoDaddy](https://www.godaddy.com/)
 - Check prices and availability at [Domcomp](https://www.domcomp.com/)
