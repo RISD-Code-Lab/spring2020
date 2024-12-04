@@ -63,7 +63,7 @@ We’ll be introducing fundamental programming concepts that are relevant both o
 We will be designing future sessions based off of student needs and interests over the course of the semester.
 
 # Lectures
-Past lecture slides are accessible on [Google Drive](https://drive.google.com/open?id=1Hf3KJXnk7XSb8Xmy0DBtrlfkVhqaygkB)
+Past lecture slides are accessible on [Google Drive](https://drive.google.com/drive/folders/1y-eGLxlc4Koc5Lan6247np-q1cq1mzQi?usp=sharing)
 
 ## Possible Upcoming Session Topics:
 - Datatypes
