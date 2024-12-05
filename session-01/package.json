@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/RISD-code-lab/cl-spring2020#readme",
   "dependencies": {
-    "http-server": "^0.12.1",
+    "http-server": "^0.12.3",
     "livereload": "^0.9.1"
   }
 }
